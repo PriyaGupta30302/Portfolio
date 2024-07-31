@@ -1,0 +1,26 @@
+[
+  {
+    "institution": "Seth Jai Parkash Mukand Lal Institute of Engineering & Technology",
+    "startDate": "20 Sep, 2021",
+    "endDate": "29 June, 2024",
+    "imageSrc": "education/college.png",
+    "details": []
+  },
+  {
+    "institution": "Swami Vivekanand Public School",
+    "board": "CBSE",
+    "details": [
+      {
+        "course": "10th Grade",
+        "startDate": "4 April, 2018",
+        "endDate": "31 March, 2019"
+      },
+      {
+        "course": "12th Grade",
+        "startDate": "4 April, 2020",
+        "endDate": "31 March, 2021"
+      }
+    ],
+    "imageSrc": "education/school.png"
+  }
+]

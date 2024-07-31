@@ -1,61 +1,82 @@
 @import "../../vars.css";
 
 .container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-    box-shadow: 0 16px 14px 0 #04152d;
-    padding: 18px 24px;
-    max-width: 345px;
-  }
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: rgba(54, 54, 54, 0.6);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  max-width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
 
-  .image {
-    margin-bottom: 26px;
-  }
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(194, 194, 194, 0.35);
+}
 
-  .title {
-    font-size: 25px;
-    font-weight: 700;
-  }
+.image {
+  width: 100%;   
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
-  .description {
-    margin-top: 6px;
-    font-size: 25px;
-    font-weight: 400;
-  }
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
 
-  .skills {
-    width: 100%;
-    margin-top: 14px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 6px;
-    list-style: none;
-  }
+.description {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f1f1f1;
+}
 
-  .skill {
-    font-size: 25px;
-    font-weight: 400;
-    border-radius: 100px;
-    background: var(--color-dark);
-    padding: 2px 22px;
-  }
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
 
-  .links {
-    width: 100%;
-    margin-top: 26px;
-    display: flex;
-    justify-content: space-around;
-  }
+.skill {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 5px 15px;
+}
 
-  .link {
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: 30px;
-    font-weight: 600;
-    border-radius: 100px;
-    background: var(--color-primary);
-    padding: 1px 22px;
-  }
+.links {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  background: #19376d;
+  padding: 15px 0;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.link:hover {
+  background: linear-gradient(135deg, #576cbc 0%,  #19376d 100%);
+  transform: translateY(-3px);
+}

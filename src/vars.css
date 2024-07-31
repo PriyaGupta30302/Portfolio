@@ -9,3 +9,24 @@
     /* Fonts */
     --font-roboto: "Roboto";
   }
+
+  #about .button {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #about .button:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+  }
+  
+  #about .button:active {
+    transform: translateY(1px);
+  }
+  

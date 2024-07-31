@@ -1,64 +1,92 @@
 @import "../../vars.css";
 
 .container {
-    color: var(--color-text);
-    margin-top: 120px;
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
-    padding: 58px 10%;
-    gap: 10px;
-  }
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  padding: 40px 10%;
+  text-align: center;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .text h2 {
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 4px;
-  }
+.text h2 {
+  font-size: 48px; /* Increased font size */
+  font-weight: 700;
+  margin-bottom: 20px; /* Increased margin */
+}
 
-  .text p {
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 2px;
-  }
+.text p {
+  font-size: 24px; /* Increased font size */
+  margin-bottom: 30px; /* Increased margin */
+}
 
-  .links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    gap: 26px;
-  }
+.heading{
+  margin-bottom: 50px;
+}
 
-  .link {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-  }
-  
-  .link a {
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-  }
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased gap */
+  margin-bottom: 30px; /* Increased margin */
+}
 
-  @media screen and (max-width: 830px) {
-    .container {
-        flex-direction: column;
-        gap: 23px;
-      }
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-      .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 20px; /* Increased font size */
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+}
 
-      .links {
-        align-items: center;
-      }
-  }
+.link a:hover {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.link img {
+  width: 24px;
+  height: 24px;
+}
+
+.footerNav {
+  margin-top: 100px; /* Increased margin */
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Increased gap */
+}
+
+.navLinks li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 20px; /* Increased font size */
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navLinks li a:hover {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.footerText {
+  margin-top: 80px;
+  font-size: 16px;
+  color: var(--color-text);
+}
