@@ -6,23 +6,36 @@ export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.text  }>
-        <p>Get in Touch</p>
-          <h2 className="heading" >Contact Me</h2>
-          
+        <div className={styles.text}>
+          <p>Get in Touch</p>
+          <h2 className="heading">Contact Me</h2>
         </div>
-        <ul className={styles.links    } >
+        <ul className={styles.links}>
           <li className={styles.link}>
-            <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-            <a href="mailto:priyagupta30302@gmail.com">priyagupta30302@gmail.com</a>
+            <a href="mailto:priyagupta30302@gmail.com">
+            <img 
+            src={getImageUrl("contact/emailIcon.png")}  alt="Email icon" 
+            />
+            </a>
+            <span className={styles.text1}>
+              <a href="mailto:priyagupta30302@gmail.com">priyagupta30302@gmail.com</a></span>
           </li>
           <li className={styles.link}>
+            <a  href="https://www.linkedin.com/feed/">
             <img src={getImageUrl("contact/linkedinIcon.png")} alt="LinkedIn icon" />
-            <a href="https://www.linkedin.com/feed/">linkedin.com/Priya</a>
+            </a>
+            <span className={styles.text1}>
+              <a  href="https://www.linkedin.com/feed/">linkedin.com/Priya</a>
+            </span>
           </li>
           <li className={styles.link}>
-            <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-            <a href="https://github.com/PriyaGupta30302">github.com/Priya</a>
+           <a href="https://github.com/dashboard">
+           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
+           </a>
+            <span className={styles.text1}>
+              <a href="https://github.com/dashboard">github.com/Priya</a>
+
+            </span>
           </li>
         </ul>
         <div className={styles.footerNav}>
