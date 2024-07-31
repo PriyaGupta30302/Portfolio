@@ -3,16 +3,16 @@ import { Link } from 'react-scroll';
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
-export const Hero = () => {
-  const handleDownload = () => {
-    const pdfUrl = getImageUrl("assets/priya-resume.pdf"); // Ensure the correct path to your CV
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.setAttribute("download", "priya-resume.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  export const Hero = () => {
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = './assets/Priya-Resume.pdf';
+      link.download = 'Priya-Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+
 
   return (
     <section className={styles.container}>
@@ -30,7 +30,7 @@ export const Hero = () => {
           >
             Contact Me
           </Link>
-          <button className={styles.downloadBtn} onClick={handleDownload}>Download CV</button>
+          <button className={styles.downloadBtn} onClick={handleDownload}>Resume</button>
         </div>
       </div>
       <img

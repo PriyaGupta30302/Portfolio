@@ -42,7 +42,7 @@ export const Contact = () => {
           </ul>
         </div>
       </div>
-      <p className={styles.footerText}>© 2023 Priya Gupta</p>
+      <p className={styles.footerText}>© 2024 Priya Gupta</p>
     </footer>
   );
 };

@@ -2,7 +2,7 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 79px;
+  margin-top: 40px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -102,6 +102,8 @@
 }
 
 .educationItem {
+  display: flex;
+  align-items: center; /* Vertically center the content */
   background: #2b3a67;
   border-radius: 10px;
   padding: 15px;
@@ -111,6 +113,24 @@
 .educationItem:hover {
   transform: translateX(5px);
   background-color: #364785;
+}
+
+.educationImageContainer {
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-right: 15px;/* Space between image andtext*/
+  /* width: 60px;
+  height: 60px; */
+}
+
+.educationImage {
+  width: 80px; /* Adjust as needed */
+  height: auto; /* Ensure it’s square */
+  /* border-radius: 50%;  */
+  object-fit: contain; /* Ensure the image covers the area */
+}
+
+.educationDetails {
+  flex: 1; /* Take up remaining space */
 }
 
 .educationItem h4 {
@@ -126,6 +146,17 @@
   color: var(--color-text);
   margin: 0;
 }
+
+.educationImageCircular {
+  border-radius: 50%; /* Make circular */
+}
+
+.educationImageNonCircular {
+  border-radius: 0; /* Ensure no rounding for non-circular */
+}
+
+
+
 
 @media screen and (max-width: 830px) {
   .content {

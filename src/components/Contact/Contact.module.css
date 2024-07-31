@@ -3,28 +3,30 @@
 .container {
   background-color: var(--color-dark);
   color: var(--color-text);
-  padding: 40px 10%;
+  padding: 20px 5%; /* Adjust padding for smaller content spacing */
   text-align: center;
   position: relative;
-  min-height: 60vh;
+  min-height: 50vh; /* Adjust minimum height */
+  width: 100%; /* Set a fixed width */
+  margin: 0 auto; /* Center the container horizontally */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .text h2 {
-  font-size: 48px; /* Increased font size */
+  font-size: 36px; /* Adjust font size for a more compact look */
   font-weight: 700;
-  margin-bottom: 20px; /* Increased margin */
+  margin-bottom: 15px; /* Adjust margin for tighter spacing */
 }
 
 .text p {
-  font-size: 24px; /* Increased font size */
-  margin-bottom: 30px; /* Increased margin */
+  font-size: 20px; /* Adjust font size for a more compact look */
+  margin-bottom: 20px; /* Adjust margin for tighter spacing */
 }
 
-.heading{
-  margin-bottom: 50px;
+.heading {
+  margin-bottom: 40px; /* Adjust margin for a more compact look */
 }
 
 .links {
@@ -32,22 +34,23 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 30px; /* Increased gap */
-  margin-bottom: 30px; /* Increased margin */
+  gap: 20px; /* Adjust gap for tighter spacing */
+  margin-bottom: 20px; /* Adjust margin for tighter spacing */
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px; /* Adjust gap for tighter spacing */
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 20px; /* Increased font size */
+  font-size: 16px; /* Adjust font size for a more compact look */
   font-weight: 600;
   transition: color 0.3s, transform 0.3s;
+  margin-top: 20px;
 }
 
 .link a:hover {
@@ -56,12 +59,13 @@
 }
 
 .link img {
-  width: 24px;
-  height: 24px;
+  width: 20px; /* Adjust size for a more compact look */
+  height: 20px; /* Adjust size for a more compact look */
+  margin-top: 20px;
 }
 
 .footerNav {
-  margin-top: 100px; /* Increased margin */
+  margin-top: 60px; /* Adjust margin for a more compact look */
 }
 
 .navLinks {
@@ -69,13 +73,14 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 60px; /* Increased gap */
+  gap: 40px; /* Adjust gap for tighter spacing */
+  
 }
 
 .navLinks li a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 20px; /* Increased font size */
+  font-size: 18px; /* Adjust font size for a more compact look */
   font-weight: 600;
   transition: color 0.3s, transform 0.3s;
 }
@@ -86,7 +91,7 @@
 }
 
 .footerText {
-  margin-top: 80px;
-  font-size: 16px;
+  margin-top: 40px; /* Adjust margin for a more compact look */
+  font-size: 14px; /* Adjust font size for a more compact look */
   color: var(--color-text);
 }

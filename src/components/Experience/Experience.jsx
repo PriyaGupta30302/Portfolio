@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./Experience.module.css";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiBootstrap, SiTailwindcss, SiPhp, SiMysql } from "react-icons/si";
+import history from "../../data/education.json"; // Ensure this path and file are correct
+import { getImageUrl } from "../../utils"; // Ensure this path and function are correct
 
 export const Experience = () => {
   return (
-    <section className={styles.container} id="experience">
+    <section className={styles.container} id="experience" >
       <h2 className={styles.title}>Skills & Education</h2>
       <div className={styles.content}>
         
@@ -73,23 +75,23 @@ export const Experience = () => {
         <div className={styles.card}>
           <h3 className={styles.cardTitle}>Education</h3>
           <div className={styles.education}>
-            <div className={styles.educationItem}>
-              <h4>Bachelor of Computer Application</h4>
-              <p>Seth Jai Parkash Mukand Lal Institute of Engineering & Technology</p>
-              <p>20 Sep, 2021 - 29 June, 2024</p>
-            </div>
-            <div className={styles.educationItem}>
-              <h4>12th Grade</h4>
-              <p>Swami Vivekanand Public School</p>
-              <p>CBSE Board</p>
-              <p>4 April, 2020 - 31 March, 2021</p>
-            </div>
-            <div className={styles.educationItem}>
-              <h4>10th Grade</h4>
-              <p>Swami Vivekanand Public School</p>
-              <p>CBSE Board</p>
-              <p>4 April, 2018 - 31 March, 2019</p>
-            </div>
+            {history.map((educationItem, index) => (
+              <div key={index} className={styles.educationItem}>
+                <div className={styles.educationImageContainer}>
+                  <img
+                    src={getImageUrl(educationItem.imageSrc)}
+                    alt={`${educationItem.title} Logo`}
+                    className={styles.educationImage}
+                  />
+                </div>
+                <div className={styles.educationDetails}>
+                  <h4>{educationItem.title}</h4>
+                  <p>{educationItem.institution}</p>
+                  {educationItem.board && <p>{educationItem.board}</p>}
+                  <p>{`${educationItem.startDate} - ${educationItem.endDate}`}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
