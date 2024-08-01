@@ -30,7 +30,8 @@ import { getImageUrl } from "../../utils";
           >
             Contact Me
           </Link>
-          <button className={styles.downloadBtn} onClick={handleDownload}>Resume</button>
+          {/* <button className={styles.downloadBtn} onClick={handleDownload}>Resume</button> */}
+          <a href="/assets/Priya-Resume.pdf" download="Priya-Resume.pdf" className={styles.downloadBtn}>Resume</a>
         </div>
       </div>
       <img

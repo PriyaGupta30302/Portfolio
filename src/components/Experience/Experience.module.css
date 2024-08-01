@@ -156,8 +156,6 @@
 }
 
 
-
-
 @media screen and (max-width: 830px) {
   .content {
     flex-direction: column;
@@ -167,4 +165,29 @@
   .card {
     width: 100%;
   }
+
+  .educationItem {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center align text for better readability */
+  }
+
+  .educationImageContainer {
+    margin-right: 0; /* Remove right margin when stacked */
+    margin-bottom: 15px; /* Add space below the image */
+  }
+
+  .educationImage {
+    width: 80px; /* Adjust image size for smaller screens */
+  }
+
+  .educationItem p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+
+  .educationItem h4 {
+    font-size: 21px;
+  }
+
 }

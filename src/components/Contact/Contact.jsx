@@ -13,26 +13,28 @@ export const Contact = () => {
         <ul className={styles.links}>
           <li className={styles.link}>
             <a href="mailto:priyagupta30302@gmail.com">
-            <img 
-            src={getImageUrl("contact/emailIcon.png")}  alt="Email icon" 
-            />
+            <img src={getImageUrl("contact/emailIcon.png")}  alt="Email icon" />
             </a>
             <span className={styles.text1}>
-              <a href="mailto:priyagupta30302@gmail.com">priyagupta30302@gmail.com</a></span>
+              <a href="mailto:priyagupta30302@gmail.com">priyagupta30302@gmail.com</a>
+            </span>
           </li>
+
           <li className={styles.link}>
-            <a  href="https://www.linkedin.com/feed/">
+            <a  href="https://www.linkedin.com/in/priya-gupta-81b271252/">
             <img src={getImageUrl("contact/linkedinIcon.png")} alt="LinkedIn icon" />
             </a>
             <span className={styles.text1}>
-              <a  href="https://www.linkedin.com/feed/">linkedin.com/Priya</a></span>
+              <a  href="https://www.linkedin.com/in/priya-gupta-81b271252/">linkedin.com/Priya</a>
+            </span>
           </li>
+
           <li className={styles.link}>
-           <a href="https://github.com/dashboard">
+           <a href="https://github.com/PriyaGupta30302">
            <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
            </a>
             <span className={styles.text1}>
-              <a href="https://github.com/dashboard">github.com/Priya</a>
+              <a href="https://github.com/PriyaGupta30302">github.com/Priya</a>
 
             </span>
           </li>
@@ -43,7 +45,7 @@ export const Contact = () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a href="#experience">Skills</a>
             </li>
             <li>
               <a href="#projects">Projects</a>

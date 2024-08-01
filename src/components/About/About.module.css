@@ -79,6 +79,7 @@
   
     .aboutImage {
       display: flex;
+      width: 70%;
     }
   
     .aboutItems {
@@ -89,4 +90,16 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    .aboutItem h3 {
+      font-size: 23px;
+      font-weight: 600;
+    }
+  
+    .aboutItem p {
+      font-size: 19px;
+    }
+
+
+    
   }

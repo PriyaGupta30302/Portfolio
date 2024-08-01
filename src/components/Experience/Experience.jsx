@@ -88,9 +88,11 @@ export const Experience = () => {
                   <h4>{educationItem.title}</h4>
                   <p>{educationItem.institution}</p>
                   {educationItem.board && <p>{educationItem.board}</p>}
-                  <p>{`${educationItem.startDate} - ${educationItem.endDate}`}</p>
+                  <p>{`${educationItem.startDate}  ${educationItem.endDate}`}</p>
                 </div>
+                
               </div>
+              
             ))}
           </div>
         </div>
