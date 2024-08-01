@@ -6,7 +6,7 @@ import { getImageUrl } from "../../utils";
   export const Hero = () => {
     const handleDownload = () => {
       const link = document.createElement('a');
-      link.href = './assets/Priya-Resume.pdf';
+      link.href = './assets/resume/Priya-Resume.pdf';
       link.download = 'Priya-Resume.pdf';
       document.body.appendChild(link);
       link.click();
@@ -30,8 +30,8 @@ import { getImageUrl } from "../../utils";
           >
             Contact Me
           </Link>
-          {/* <button className={styles.downloadBtn} onClick={handleDownload}>Resume</button> */}
-          <a href="/assets/Priya-Resume.pdf" download="Priya-Resume.pdf" className={styles.downloadBtn}>Resume</a>
+          <button className={styles.downloadBtn} onClick={handleDownload}>Resume</button>
+          {/* <a href="/assets/Priya-Resume.pdf" download="Priya-Resume.pdf" className={styles.downloadBtn}>Resume</a> */}
         </div>
       </div>
       <img
