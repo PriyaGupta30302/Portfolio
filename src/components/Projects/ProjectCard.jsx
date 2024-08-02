@@ -1,12 +1,20 @@
 import React from 'react';
 import styles from "./ProjectCard.module.css";
-import { getImageUrl } from "../../utils";
+import amazon from "../../assets/projects/amazon.png";
+import snake from "../../assets/projects/snake.png";
+import virtual from "../../assets/projects/virtual.png";
+
+const projectImages = {
+  "projects/amazon.png": amazon,
+  "projects/snake.png": snake,
+  "projects/virtual.png": virtual,
+};
 
 export const ProjectCard = ({ project: { title, imageSrc, description, skills, demo } }) => {
   return (
     <div className={styles.container} id="projects">
       <img 
-        src={getImageUrl(imageSrc)} 
+        src={projectImages[imageSrc]} 
         alt={`Image of ${title}`} 
         className={styles.image}
       />

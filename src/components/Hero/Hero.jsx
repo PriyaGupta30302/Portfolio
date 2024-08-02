@@ -1,18 +1,10 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import styles from "./Hero.module.css";
-import { getImageUrl } from "../../utils";
+import styles from './Hero.module.css';
+import heroImage from '../../assets/hero/heroImage.png';
+import resume from '../../assets/resume/resume.pdf'; // Ensure this path is correct
 
 export const Hero = () => {
-  const handleOpenPDF = () => {
-    const link = document.createElement('a');
-    link.href = './assets/resume/Priya-Resume.pdf';
-    link.target = '_blank'; // Open in a new tab
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -29,11 +21,17 @@ export const Hero = () => {
           >
             Contact Me
           </Link>
-          <button className={styles.downloadBtn} onClick={handleOpenPDF}>Resume</button>
+          <a
+            href={resume}
+            download="Priya_Gupta_Resume.pdf" // Optional: specify the file name when downloaded
+            className={styles.downloadBtn}
+          >
+            Resume
+          </a>
         </div>
       </div>
       <img
-        src={getImageUrl("hero/heroImage.png")}
+        src={heroImage}
         alt="Hero image of me"
         className={styles.heroImg}
       />

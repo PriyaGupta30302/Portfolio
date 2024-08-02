@@ -65,7 +65,10 @@
 }
 
 .topButton:hover {
-    background-color: rgb(82, 113, 163);
+  background-color: var(--color-primary-dark);
+  outline: 1px solid white;
+  box-shadow: 0 0 10px white;
+  transform: translateY(-3px);
 }
 
 .topButton:focus {

@@ -47,8 +47,7 @@
   gap: 20px;
 }
 
-.contactBtn,
-.downloadBtn {
+.contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -65,18 +64,46 @@
   justify-content: center;
 }
 
-.contactBtn:hover,
-.downloadBtn:hover {
+.downloadBtn {
+  text-decoration: none;
+  background-color: rgb(67, 64, 64);
+  color: var(--color-text);
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s, outline 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.contactBtn:hover {
   background-color: var(--color-primary-dark);
   outline: 2px solid white;
   box-shadow: 0 0 10px white;
   transform: translateY(-3px);
 }
 
-.contactBtn:active,
-.downloadBtn:active {
+.downloadBtn:hover {
+  background-color: rgb(33, 32, 32);
+  outline: 2px solid white;
+  box-shadow: 0 0 10px white;
+  transform: translateY(-3px);
+}
+
+.contactBtn:active {
   transform: translateY(1px);
 }
+
+.downloadBtn:active {
+  transform: translateY(1px);
+} 
 
 .heroImg {
   width: 50%;

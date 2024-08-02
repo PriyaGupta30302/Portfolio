@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../utils";
+import emailIcon from "../../assets/contact/emailIcon.png";
+import linkedinIcon from "../../assets/contact/linkedinIcon.png";
+import githubIcon from "../../assets/contact/githubIcon.png";
 
 export const Contact = () => {
   return (
@@ -13,7 +15,10 @@ export const Contact = () => {
         <ul className={styles.links}>
           <li className={styles.link}>
             <a href="mailto:priyagupta30302@gmail.com">
-            <img src={getImageUrl("contact/emailIcon.png")}  alt="Email icon" />
+              <img 
+                src={emailIcon} 
+                alt="Email icon" 
+              />
             </a>
             <span className={styles.text1}>
               <a href="mailto:priyagupta30302@gmail.com">priyagupta30302@gmail.com</a>
@@ -21,21 +26,26 @@ export const Contact = () => {
           </li>
 
           <li className={styles.link}>
-            <a  href="https://www.linkedin.com/in/priya-gupta-81b271252/">
-            <img src={getImageUrl("contact/linkedinIcon.png")} alt="LinkedIn icon" />
+            <a href="https://www.linkedin.com/in/priya-gupta-81b271252/">
+              <img 
+                src={linkedinIcon} 
+                alt="LinkedIn icon" 
+              />
             </a>
             <span className={styles.text1}>
-              <a  href="https://www.linkedin.com/in/priya-gupta-81b271252/">linkedin.com/Priya</a>
+              <a href="https://www.linkedin.com/in/priya-gupta-81b271252/">linkedin.com/Priya</a>
             </span>
           </li>
 
           <li className={styles.link}>
-           <a href="https://github.com/PriyaGupta30302">
-           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-           </a>
+            <a href="https://github.com/PriyaGupta30302">
+              <img 
+                src={githubIcon} 
+                alt="Github icon" 
+              />
+            </a>
             <span className={styles.text1}>
               <a href="https://github.com/PriyaGupta30302">github.com/Priya</a>
-
             </span>
           </li>
         </ul>
