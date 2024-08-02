@@ -7,7 +7,7 @@ import { getImageUrl } from "../../utils"; // Ensure this path and function are 
 
 export const Experience = () => {
   return (
-    <section className={styles.container} id="experience" >
+    <section className={styles.container} id="experience">
       <h2 className={styles.title}>Skills & Education</h2>
       <div className={styles.content}>
         
@@ -78,21 +78,35 @@ export const Experience = () => {
             {history.map((educationItem, index) => (
               <div key={index} className={styles.educationItem}>
                 <div className={styles.educationImageContainer}>
-                  <img
-                    src={getImageUrl(educationItem.imageSrc)}
-                    alt={`${educationItem.title} Logo`}
-                    className={styles.educationImage}
-                  />
+                  {/* Optional image here */}
                 </div>
                 <div className={styles.educationDetails}>
                   <h4>{educationItem.title}</h4>
                   <p>{educationItem.institution}</p>
                   {educationItem.board && <p>{educationItem.board}</p>}
-                  <p>{`${educationItem.startDate}  ${educationItem.endDate}`}</p>
+                  <p>{`${educationItem.startDate} ${educationItem.endDate}`}</p>
+                  {educationItem.specialization && (
+                    <div className={styles.specialization}>
+                      <h4>Specialization</h4>
+                      <ul>
+                        {educationItem.specialization.map((item, i) => (
+                          <li key={i}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {educationItem.extracurriculars && (
+                    <div className={styles.extracurriculars}>
+                      <h4>Extracurricular Activities</h4>
+                      <ul>
+                        {educationItem.extracurriculars.map((activity, i) => (
+                          <li key={i}>{activity}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
-                
               </div>
-              
             ))}
           </div>
         </div>

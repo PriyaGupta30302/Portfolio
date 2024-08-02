@@ -3,16 +3,15 @@ import { Link } from 'react-scroll';
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
-  export const Hero = () => {
-    const handleDownload = () => {
-      const link = document.createElement('a');
-      link.href = './assets/resume/Priya-Resume.pdf';
-      link.download = 'Priya-Resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    };
-
+export const Hero = () => {
+  const handleOpenPDF = () => {
+    const link = document.createElement('a');
+    link.href = './assets/resume/Priya-Resume.pdf';
+    link.target = '_blank'; // Open in a new tab
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section className={styles.container}>
@@ -30,8 +29,7 @@ import { getImageUrl } from "../../utils";
           >
             Contact Me
           </Link>
-          <button className={styles.downloadBtn} onClick={handleDownload}>Resume</button>
-          {/* <a href="/assets/Priya-Resume.pdf" download="Priya-Resume.pdf" className={styles.downloadBtn}>Resume</a> */}
+          <button className={styles.downloadBtn} onClick={handleOpenPDF}>Resume</button>
         </div>
       </div>
       <img

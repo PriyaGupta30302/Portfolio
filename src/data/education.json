@@ -3,8 +3,12 @@
     "title": "Bachelor of Computer Application",
     "institution": "Seth Jai Parkash Mukand Lal Institute of Engineering & Technology",
     "startDate": "20 Sep, 2021 -",
-    "endDate": "29 June, 2024",
-    "imageSrc": "education/college.png"
+    "endDate": "28 June, 2024",
+    "extracurriculars": [
+      "Secured 2nd position in Article writing.",
+      "Contributed to team events.",
+      "Engaged in diverse club activities."
+    ]
   },
   {
     "title": "Secondary Education",
@@ -12,15 +16,7 @@
     "board": "CBSE Board",
     "startDate": "4 April, 2020 -",
     "endDate": "31 March, 2021",
-    "imageSrc": "education/sv.png"
-  },
-  {
-    "title": "Extracurricular Activities",
-    "institution": "Engaged in diverse club activities.",
-    "board": "Contributed to team events.",
-    "startDate":"Keen to tackle new projects.",
-    "endDate":".",
-    "imageSrc": "education/lightbulb.png"
+    "specialization": ["Commerce with Economics"
+    ]
   }
-  
 ]
