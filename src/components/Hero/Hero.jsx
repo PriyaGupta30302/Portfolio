@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import styles from './Hero.module.css';
 import heroImage from '../../assets/hero/heroImage.png';
-import resume from '../../assets/resume/resume.pdf'; // Ensure this path is correct
+// Use the direct download link
+const resumeUrl = "https://drive.google.com/uc?export=download&id=1avhmclX9Nm_TQFMEVHVbCkQWE1TpMyfc";
 
 export const Hero = () => {
   return (
@@ -22,8 +23,8 @@ export const Hero = () => {
             Contact Me
           </Link>
           <a
-            href={resume}
-            download="Priya_Gupta_Resume.pdf" // Optional: specify the file name when downloaded
+            href={resumeUrl} // Use the direct download link here
+            download="Priya_Gupta_Resume.pdf" // Optional: specify the file name for download
             className={styles.downloadBtn}
           >
             Resume
