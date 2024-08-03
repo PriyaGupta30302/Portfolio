@@ -191,12 +191,12 @@
 
   .educationItem {
     flex-direction: column; /* Stack items vertically on smaller screens */
-    text-align: center; /* Center align text for better readability */
+    
   }
 
   .educationItem p {
     font-size: 16px;
-    text-align: center;
+    /* text-align: center; */
   }
   
 
@@ -207,14 +207,24 @@
   .extracurriculars ul {
     list-style-type: disc; /* Sets the bullet style */
     list-style-position: outside; /* Moves the bullet inside the padding */
-   
-    
   }
   
   .extracurriculars li {
-    margin-left: 1rem; /* Adjust the distance between bullet and text */
-   
+    margin-right: 1rem; /* Adjust the distance between bullet and text */
   }
+
+  .specialization {
+    text-align: left; 
+    margin-right: 7.8rem;/* Align text to the left */
+  }
+
+  .specialization ul {
+    
+    text-align: left; /* Align text to the left */
+    font-size: 16px;
+  }
+
+  
   
 
 }

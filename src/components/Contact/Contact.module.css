@@ -64,6 +64,14 @@
   margin-top: 20px;
 }
 
+.link img:hover {
+  background-color: var(--color-primary-dark);
+  outline: 1px solid white;
+  box-shadow: 0 0 10px white;
+  transform: translateY(-3px);
+  border-radius: 3px;
+}
+
 .footerNav {
   margin-top: 60px; /* Adjust margin for a more compact look */
 }
