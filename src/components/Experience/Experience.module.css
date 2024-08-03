@@ -214,8 +214,9 @@
   }
 
   .specialization {
-    text-align: left; 
-    margin-right: 7.8rem;/* Align text to the left */
+    text-align: left;
+    margin-right: 7rem; 
+   
   }
 
   .specialization ul {
@@ -223,6 +224,8 @@
     text-align: left; /* Align text to the left */
     font-size: 16px;
   }
+
+  
 
   
   
