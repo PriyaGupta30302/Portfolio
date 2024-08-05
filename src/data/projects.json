@@ -1,12 +1,13 @@
 [
-    {
-      "title": "Amazon Clone",
-      "imageSrc": "projects/amazon.png",
-      "description": "This project, aimed at learning the latest languages, resulted in a fully responsive Amazon clone landing page",
-      "skills": ["HTML", "CSS", "JS"],
-      "demo": " https://priyagupta30302.github.io/Amazon-Clone/",
-      "source": "https://www.github.com"
-    },
+  {
+    "title": "Virtual Reality",
+    "imageSrc": "projects/virtual.png",
+    "description": "Created an engaging virtual reality experience with React.js, designed to be fully immersive and responsive.",
+    "skills": ["React.js", "Tailwind", "Node"],
+    "demo": "https://virtual-reality-plum.vercel.app/",
+    "source": "https://www.github.com"
+  },
+    
     {
       "title": "Snake Game",
       "imageSrc": "projects/snake.png",
@@ -15,12 +16,13 @@
       "demo": "https://snake-github-io-seven.vercel.app/",
       "source": "https://www.github.com"
     },
+    
     {
-      "title": "Virtual Reality",
-      "imageSrc": "projects/virtual.png",
-      "description": "Created an engaging virtual reality experience with React.js, designed to be fully immersive and responsive.",
-      "skills": ["React.js", "Tailwind", "Node"],
-      "demo": "https://virtual-reality-plum.vercel.app/",
+      "title": "Amazon Clone",
+      "imageSrc": "projects/amazon.png",
+      "description": "This project, aimed at learning the latest languages, resulted in a fully responsive Amazon clone landing page",
+      "skills": ["HTML", "CSS", "JS"],
+      "demo": " https://priyagupta30302.github.io/Amazon-Clone/",
       "source": "https://www.github.com"
     }
   ]
