@@ -3,7 +3,7 @@
     "title": "Virtual Reality",
     "imageSrc": "projects/virtual.png",
     "description": "Created an engaging virtual reality experience with React.js, designed to be fully immersive and responsive.",
-    "skills": ["React.js", "Tailwind", "Node"],
+    "skills": ["React.js", "Tailwind", "Node.js"],
     "demo": "https://virtual-reality-plum.vercel.app/",
     "source": "https://www.github.com"
   },
